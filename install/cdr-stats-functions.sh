@@ -586,7 +586,7 @@ func_nginx_supervisor(){
             chkconfig --levels 235 supervisor on
             cp /usr/src/cdr-stats/install/supervisor/centos/supervisord.conf /etc/supervisord.conf
             mkdir -p /etc/supervisor/conf.d
-            cp /usr/src/cdr-stats/install/supervisor/gunicorn_cdr_stats.conf /etc/supervisor/conf.d/
+            cp /usr/src/cdr-stats/install/supervisor/gunicorn_cdrstats.conf /etc/supervisor/conf.d/
             mkdir /var/log/supervisor/
         ;;
     esac
